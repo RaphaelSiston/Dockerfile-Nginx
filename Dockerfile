@@ -1,3 +1,3 @@
 FROM nginx:latest
-RUN apt update && apt install vim -y
+RUN apt update && apt install vim nginx -y
 COPY index.html /usr/share/nginx/html/index.html
